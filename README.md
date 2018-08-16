@@ -1,4 +1,4 @@
-# Descubriendo Patrones de Comportamiento
+# Descubriendo Patrones de Comportamiento Temporal
 
 Analizamos las `TXs - VS` en un distrito de Lima -`sjl` y construimos clusters de comportamiento semana del consumidor, por cada  `MCCG`.
 
