@@ -16,7 +16,7 @@ Cada unidad de comportamiento (`footprint`) se comporta como una matriz de dimen
 ## References
 
 
-`Discovering temporal regularities in retail customers’ shopping behavior` Adaptive Empirical Bayesian Smoothing Splines; as [here][version]).
+`Discovering temporal regularities in retail customers’ shopping behavior`, [here][version]).
 
 
 [unregistered]:http://docs.julialang.org/en/release-0.5/manual/packages/#installing-unregistered-packages
