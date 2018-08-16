@@ -8,9 +8,9 @@ Analizamos las `TXs - VS` en un distrito de Lima -`sjl` y construimos clusters d
 Creamos marcas temporales del movimiento de las TXs, para ellos hicimos agrupaciones por cada semana.
 
 
-A list object containing the following information.
+Cada unidad de comportamiento (`footprint`) se comporta como una matriz de dimensiones: `t` x `d` 
 
-- `t`: 4 turnos durante el dia
+- `t`: 4 turnos durante el dia `0,6,12,18 hrs.`
 - `d`: Cada dia de la semana
 
 ## References
