@@ -88,7 +88,12 @@ Para poder procesarlos los footprints son representados como vectores, de la sig
 
 ![Match function](https://user-images.githubusercontent.com/7105645/46187153-d09bd280-c2a7-11e8-937f-63450ce94054.png)
 
+Mostramos la evolución de los comportamientos en el tiempo, desde la Fecha Inicial, hasta la fecha Final de nuestra poblacion de datos analisados.
+También observamos que la semana 7 del 2017 hay una caida en el numero de casi todos los comportamientos de consumo.
+
 ![Match function](https://user-images.githubusercontent.com/7105645/46186760-d7c1e100-c2a5-11e8-8d05-d8783384ae00.png)
+
+Representamos en centroide del cluster 34 porque es el el mas frecuente, (podemos representar los n cluster globales que se muestran), Recuerda que los centroides son tensorres, asi que mostramos en 3 gráficos, uno por cada 2 dimeciones.
 
 ![Match function](https://user-images.githubusercontent.com/7105645/46187146-c4177a00-c2a7-11e8-8213-293aa1829fcb.png)
 
