@@ -39,6 +39,14 @@ Inicia `jupyter notebook` en el path de `CLUSTER OF TENSORS`.
 
 ## Exploratory Analysis
 
+![Match function](https://user-images.githubusercontent.com/7105645/46185777-0ab5a600-c2a1-11e8-9fc8-ea4c85b2c23c.png)
+![Match function](https://user-images.githubusercontent.com/7105645/46185787-143f0e00-c2a1-11e8-8dc8-9758085baee6.png)
+
+
+![Match function](https://user-images.githubusercontent.com/7105645/46185869-6bdd7980-c2a1-11e8-97f5-b460377c4aaa.png)
+![Match function](https://user-images.githubusercontent.com/7105645/46185882-75ff7800-c2a1-11e8-8e5c-1b369deb0709.png)
+
+
 ## Footprint Descripcion
 
 ## Clustering
