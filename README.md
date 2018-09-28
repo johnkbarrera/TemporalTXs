@@ -9,6 +9,7 @@ El modelos de `tensores (array 3D)` que usamos surge de la necesidad de represen
 
 ## Details
 La representacion del Tensor es la siguiente:
+
 ![Match function](https://user-images.githubusercontent.com/7105645/46182744-421d5600-c293-11e8-8b30-efd93fa1395a.png)
 
 Los datos para el análisis de tensores los puede descargar en [dropbox][dropbox];
