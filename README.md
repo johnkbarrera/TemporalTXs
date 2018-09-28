@@ -97,7 +97,15 @@ Representamos en centroide del cluster 34 porque es el el mas frecuente, (podemo
 
 ![Match function](https://user-images.githubusercontent.com/7105645/46187146-c4177a00-c2a7-11e8-8213-293aa1829fcb.png)
 
+Aquí representamos un conteo por el numero de Semanas acumulado en las que participan los clientes, por ejemplo:
+
+Si el cliente 1 tiene un 3 semana {s1,s10,s32}, se clasificara con actividades en 3 semanas, entonces oincluira la 1,2 y 3.
+
 ![Match function](https://user-images.githubusercontent.com/7105645/46187159-d5608680-c2a7-11e8-9777-2d5bdad27b7f.png)
+
+Aquí representamos un conteo por el numero de Semanas en las que participa cada cliente, por ejemplo:
+
+Si el cliente 1 tiene un 3 semana {s1,s10,s32}, se clasificara solo como 3.
 
 ![Match function](https://user-images.githubusercontent.com/7105645/46187165-e01b1b80-c2a7-11e8-8377-a9cae3379175.png)
 
