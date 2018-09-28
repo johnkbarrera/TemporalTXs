@@ -84,10 +84,26 @@ Para poder procesarlos los footprints son representados como vectores, de la sig
 ## Results
 
 
+![Match function]()
+
+
+![Match function](https://user-images.githubusercontent.com/7105645/46187087-78fd6700-c2a7-11e8-9a94-7ecf6373e419.png)
+
+![Match function](https://user-images.githubusercontent.com/7105645/46187092-80247500-c2a7-11e8-8b42-ac78bba25827.png)
+
+
+
+
+![Match function](https://user-images.githubusercontent.com/7105645/46186760-d7c1e100-c2a5-11e8-8d05-d8783384ae00.png)
+
+![Match function](https://user-images.githubusercontent.com/7105645/46187087-78fd6700-c2a7-11e8-9a94-7ecf6373e419.png)
+
+![Match function](https://user-images.githubusercontent.com/7105645/46187092-80247500-c2a7-11e8-8b42-ac78bba25827.png)
+
+
 
 
 ## Conclusion  
-
 
 ## keyword
 	Tensors
