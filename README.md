@@ -49,6 +49,36 @@ Inicia `jupyter notebook` en el path de `CLUSTER OF TENSORS`.
 
 ## Footprint Descripcion
 
+Los footprint representa una unidad de comportamiento de un cliente y representa 7 días de la semana, también son la unidad de datos que entra a nuestro modelo, son los `tensores`.
+
+
+Dado:
+
+    Sesion de TX
+        s = {cliente, timestamp, Monto}
+    
+    Cada cliente tiene una secuencia de sesiones de TX (S)
+        S = { s1, s2 , s3, ..., sn}          n: # de sesiones de cada cliente
+
+Resume un conjunto de TXs en un perido de "d" dias
+
+Dado:
+
+     t
+     d
+     mccg
+     T cada semana
+    
+    Para cada cliente:
+    	S = {s1, ..., sn}
+    
+    obtenemos: SS = {U(1), U(2), U(3), ...,U(m)}     obviamente m <=n
+
+Para poder procesarlos los footprints son representados como vectores, de la siguiente manera.
+
+![Match function](https://user-images.githubusercontent.com/7105645/46186391-f1622900-c2a3-11e8-8593-2b364ef49b71.png)
+
+
 ## Clustering
 
 ## Results
