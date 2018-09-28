@@ -1,24 +1,59 @@
 # Descubriendo Patrones de Comportamiento Temporal
 
-Analizamos las `TXs - VS` en un distrito de Lima -`sjl` y construimos clusters de comportamiento semana del consumidor, por cada  `MCCG`.
+El modelos de `tensores (array 3D)` que usamos surge de la necesidad de representar la marca o huella de comportamiento de transacciones que realiza un cliente en un determinado periodo `Per` (en nuestro caso cada semana), las dimensiones que representamos en nuestro tensor son:
+
+- `d`: los unidades de tiempo que tienen el periodo `Per` (en nuestro caso cada día).
+- `t`: representa la ventanas de tiempo en `d` (en nuestro caso son 4 turnos)
+- `mccg`:  representa la tipo de consumo que realiza el cliente.
 
 
 ## Details
+La representacion del Tensor es la siguiente:
+![Match function](https://user-images.githubusercontent.com/7105645/28857296-fbb25f34-770d-11e7-9d40-124c42dc24c1.png)
 
-Creamos marcas temporales del movimiento de las TXs, para ellos hicimos agrupaciones por cada semana.
+Los datos para el análisis de tensores los puede descargar en [dropbox][dropbox];
+los demas archivos y el codigo se encuentran aquí.
+```git
+git clone https://github.com/johnkevinbarrera/TemporalTXs.git
+```
 
+## Value
 
-Cada unidad de comportamiento (`footprint`) se comporta como una matriz de dimensiones: `t` x `d` 
+Una lista de los valores que contienen cada variable
 
-- `t`: 4 turnos durante el dia `0,6,12,18 hrs.`
-- `d`: Cada dia de la semana
+- `d`: {lunes, martes, miércoles, jueves, viernes, sábado, domingo}
+- `t`: {madrugada, mañana, tarde, noches}
+- `mccg`:  `i`: 1,2,...,n;  donde `n` = número de mccg en los datos de entrada (`SJL:28`).
+
 
 ## References
 
+## Authors
+       John Barrera
 
-`Discovering temporal regularities in retail customers’ shopping behavior`, [here][version]).
+## Model
 
+Inicia `jupyter notebook` en el path de `CLUSTER OF TENSORS`.
+
+
+## Exploratory Analysis
+
+## Footprint Descripcion
+
+## Clustering
+
+## Results
+
+
+
+
+## Conclusion  
+
+
+## keyword
+	Tensors
 
 [unregistered]:http://docs.julialang.org/en/release-0.5/manual/packages/#installing-unregistered-packages
-[version]:https://epjdatascience.springeropen.com/articles/10.1140/epjds/s13688-018-0133-0
+[version]:http://julialang.org/downloads/platform.html
 [gadfly]:http://gadflyjl.org/stable/
+[dropbox]:https://www.dropbox.com/sh/l7pagph43ufs70e/AADkJhyEvLQeVrXCrgs9q9pha?dl=0
