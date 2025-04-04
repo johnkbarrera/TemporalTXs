@@ -1,0 +1,98 @@
+# Inputs Files Locations
+thersholds_file: "data/{country_name}/thresholds_file.xlsx"
+country_config_file: "data/{country_name}/country_config.yaml"
+
+country_boundary_directory: "data/{country_name}/inputs/admin_boundaries/"
+country_boundary_file: "data/{country_name}/inputs/admin_boundaries/admin_country.gpkg" # boundaries for the whole country
+smaller_boundary_file: "data/{country_name}/inputs/admin_boundaries/admin_boundaries.gpkg" # boundaries for the smaller adm level (example level 2)
+
+population_directory: "data/{country_name}/inputs/population/"
+assets_directory: "data/{country_name}/inputs/assets/"
+hazards_directory: "data/{country_name}/inputs/hazards/"
+
+risk_index_features_file: "data/{country_name}/inputs/risk_index_features/risk_index_features.csv"
+
+# Outputs Files Locations
+general_files: "data/{country_name}/outputs/general_files/"
+temporal_files: "data/{country_name}/outputs/intermediate_files/"
+temporal_exposure_files: "data/{country_name}/outputs/intermediate_files/exposure_merge/"
+exposure_files: "data/{country_name}/outputs/exposure/"
+regional_exposure_files: "data/{country_name}/outputs/regional_exposure/"
+figures_files: "data/{country_name}/outputs/figures/"
+risk_index_files: "data/{country_name}/outputs/risk_index/"
+risk_index_layout: "data/{country_name}/outputs/risk_index/risk_index_layout.json"
+
+regional_exposure_maps: "data/{country_name}/outputs/figures_regional_exposure/" #  Geopolitical map
+exposure_maps: "data/{country_name}/outputs/figures_exposure/" #  Geopolitical map
+
+# # Statistics Files Locations
+# statistics_directory: "data/{country_name}/outputs/statistics/"
+# population_1km_input: "data/{country_name}/inputs/population/worldpop_unconstrained_1km.tif" # https://hub.worldpop.org/geodata/listing?id=74
+# population_1km_file: auto-completed # Polygonized 1km population
+
+# Patters for name and hard variables
+crs_format: "EPSG:4326"
+use_sector_in_map: False
+smaller_administrative_level: 3
+boundary_column_ids: "ADM{number}_C"
+boundary_column_names: "ADM{number}_N"
+boundary_list_column_names: auto-completed
+boundary_id_level: auto-completed
+maps_include_sector: True
+generate_damage_maps: True
+exposure_already_calculated: False
+
+# Thresholds file structure
+sheets_for_population:
+  sheet_name: "Population_per_Hazard_threshold"
+  column_names:
+    population: "population filename"
+    type_adm: "types of administration"
+    hazards: "hazard"
+    period_historical: "hazard filename" # periodical or historical name
+    damage_minor: "substantial damage"
+    damage_mayor: "complete damage"
+    exposure: "exposure"
+  # population_column: ["population filename"]
+  # hazard_columns: ["hazard", "hazard filename"]
+
+sheets_for_assets:
+  sheet_name: "Assets_per_Hazard_threshold"
+  column_names:
+    assets: "assets filename"
+    type_asset: "type of asset"
+    type_adm: "types of administration"
+    hazards: "hazard"
+    period_historical: "hazard filename" # periodical or historical name
+    damage_minor: "substantial damage"
+    damage_mayor: "complete damage"
+    exposure: "exposure" # Apply for type 1 agg
+    observation_days: "observation days" # Apply for type 2 agg
+    type_regional_agg: "type of regional agg"
+
+sheets_for_ideal_vector:
+  sheet_name: "Ideal vector values"
+  column_names:
+    - "feature names"
+    - "ideal value"
+    - "limit"
+
+sheets_for_hazard_features:
+  sheet_name: "Vulnerability variables"
+  mandatory_column_names:
+    - "hazard"
+    - "hazard filename" # periodical or historical name
+
+sheets_for_catchment_areas:
+  sheet_name: "Catchment Areas"
+  mandatory_column_names:
+    - "assets filename"
+    - "radious group"
+    - "minimal cluster size"
+
+
+regional_aggregation_assets_functions:
+  type1:
+    function_name: "type1_agg"
+  type2:
+    function_name: "type2_agg"
